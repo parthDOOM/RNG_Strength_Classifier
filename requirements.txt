@@ -1,5 +1,9 @@
 streamlit
 tensorflow
+fastapi
+uvicorn
+tensorflow
 numpy
 scipy
 scikit-learn
+python-multipart
