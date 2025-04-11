@@ -209,10 +209,12 @@ SEQ_LENGTH = 1024 # Expected byte length for analysis
 
 # configure this paths properly
 
-MODEL_PATH = 'G:/ML_proj/rng_health_model' # Keras SavedModel directory
-SCALER_MEAN_PATH = 'G:/ML_proj/rng_scaler_mean.npy'
-SCALER_SCALE_PATH = 'G:/ML_proj/rng_scaler_scale.npy'
-
+# MODEL_PATH = 'G:/ML_proj/rng_health_model' # Keras SavedModel directory
+# SCALER_MEAN_PATH = 'G:/ML_proj/rng_scaler_mean.npy'
+# SCALER_SCALE_PATH = 'G:/ML_proj/rng_scaler_scale.npy'
+MODEL_PATH = 'rng_health_model' # Relative path (directory name)
+SCALER_MEAN_PATH = 'rng_scaler_mean.npy' # Relative path (filename)
+SCALER_SCALE_PATH = 'rng_scaler_scale.npy' # Relative path (filename)
 
 
 
