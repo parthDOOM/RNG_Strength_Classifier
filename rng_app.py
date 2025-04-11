@@ -9,7 +9,9 @@ import os # Only needed if constructing API URL dynamically
 # --- Configuration ---
 # IMPORTANT: Replace with your ACTUAL Render API URL after deployment!
 # It will look something like 'https://your-service-name.onrender.com/predict/'
-RENDER_API_URL = os.environ.get("RENDER_API_URL", "http://localhost:10000/predict/")
+# RENDER_API_URL = os.environ.get("RENDER_API_URL", "http://localhost:10000/predict/")
+RENDER_API_URL = os.environ.get("RENDER_API_URL", "https://rng-strength-classifier.onrender.com")
+
 if RENDER_API_URL == "YOUR_RENDER_API_URL_HERE/predict/":
      st.warning("API URL not set. Using placeholder.")
 
