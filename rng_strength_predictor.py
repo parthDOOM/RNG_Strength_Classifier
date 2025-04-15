@@ -305,13 +305,13 @@ if predict_button and uploaded_file is not None:
                         st.write(f"(Probability of being Flawed: {probability_flawed:.4f})")
 
                         # Optional: Display some extracted features for insight
-                        # with st.expander("Show Basic Stats"):
-                        #     st.write(f"Mean (normalized): {features[0]:.3f}")
-                        #     st.write(f"Std Dev (normalized): {features[1]:.3f}")
-                        #     st.write(f"Entropy (normalized): {features[2]:.3f}")
-                        #     st.write(f"Chi-Square P-Value: {features[3]:.3f}")
-                        #     st.write(f"KS P-Value: {features[4]:.3f}")
-                        #     st.write(f"Runs Test P-Value: {features[7]:.3f}")
+                        with st.expander("Show Basic Stats"):
+                            st.write(f"Mean (normalized): {features[0]:.3f}")
+                            st.write(f"Std Dev (normalized): {features[1]:.3f}")
+                            st.write(f"Entropy (normalized): {features[2]:.3f}")
+                            st.write(f"Chi-Square P-Value: {features[3]:.3f}")
+                            st.write(f"KS P-Value: {features[4]:.3f}")
+                            st.write(f"Runs Test P-Value: {features[7]:.3f}")
 
                     else:
                         st.error(f"Feature extraction produced the wrong number of features ({features.shape[0]} instead of {EXPECTED_FEATURE_LENGTH}). Check input data or function.")
